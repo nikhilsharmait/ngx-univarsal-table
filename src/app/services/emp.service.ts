@@ -11,7 +11,7 @@ import { GenderRenderer } from './GenderRenderer';
 })
 export class EmpService {
   editable = true;
-  userTableFields: Field[] = [{ field: "user.url", header: "Profile", cellRenderer: GenderRenderer, size: 1 },
+  userTableFields: Field[] = [{ field: "user.url", header: "Profile", cellRenderer: GenderRenderer, size: 1, utClass:'bgPink' },
   { field: "user.name", header: "Name", size: 2, editable: this.editable, cellRenderer: GenderRenderer },
   { field: "user.gender", header: 'G', size: 3.5, cellRenderer: GenderRenderer, editable: this.editable },
   { field: "user.dob", header: "A", cellRenderer: GenderRenderer, size: .5, editable: this.editable },

@@ -9,4 +9,5 @@ export class Field {
     date?: boolean | null;
     cellRenderer?: any;
     editable?: boolean;
+    utClass?: string
 }
