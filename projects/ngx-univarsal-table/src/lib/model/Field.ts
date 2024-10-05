@@ -4,9 +4,13 @@ export class Field {
 
     //Non Mandatory
     checked?: boolean;
-    size?: number; // Landscape
-    sizeP?: number; // Portrait
+    size?: number;
     date?: boolean | null;
     cellRenderer?: any;
     editable?: boolean;
+
+    field0?: string;
+    field1?: string;
+    field2?: string;
+
 }

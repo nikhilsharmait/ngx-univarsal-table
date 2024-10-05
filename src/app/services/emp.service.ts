@@ -12,7 +12,7 @@ import { GenderRenderer } from './GenderRenderer';
 export class EmpService {
   editable = true;
   userTableFields: Field[] = [{ field: "user.url", header: "Profile", cellRenderer: GenderRenderer, size: 1 },
-  { field: "user.name", header: "Name", size: 2, editable: this.editable },
+  { field: "user.name", header: "Name", size: 2, editable: this.editable, cellRenderer: GenderRenderer },
   { field: "user.gender", header: 'G', size: 3.5, cellRenderer: GenderRenderer, editable: this.editable },
   { field: "user.dob", header: "A", cellRenderer: GenderRenderer, size: .5, editable: this.editable },
   { field: "user.user_pd.marital", header: "M", cellRenderer: GenderRenderer, size: .5, editable: this.editable },
@@ -21,7 +21,7 @@ export class EmpService {
   { field: "user.user_pd.education", header: 'Education', size: 1, editable: this.editable },
   { field: "user.user_pd.occupation", header: 'Occ.', size: 1, editable: this.editable },
   { field: "user.user_pd.profession", header: 'Prof.', size: 1, editable: this.editable },
-  { field: "user.user_pd.current_address", header: 'Address', size: 1, editable: this.editable },
+  { field: "user.user_pd.current_address2", header: 'Address', size: 1, editable: this.editable },
   { field: "user.user_pd.origin_city", header: 'Origin', size: 1, editable: this.editable }
   ]
 
