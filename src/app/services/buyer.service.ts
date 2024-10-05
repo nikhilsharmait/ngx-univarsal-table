@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 
-import buyerList from './buyer-dummy.json';
+import buyerList from '../json-dump/buyer-dummy.json';
+import { Field } from './Field';
+import { FilterData } from './FilterData';
 
 
 @Injectable({
@@ -37,7 +39,7 @@ export class BuyerService {
       resolve(this.buyersList);
     })
   }
-  
+
   getFilterData() {
     this.filterManageData.forEach(filter => filter.list = []);
 
