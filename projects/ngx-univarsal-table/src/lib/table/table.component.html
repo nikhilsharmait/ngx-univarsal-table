@@ -1,13 +1,13 @@
 <div class="table-section">
-  <div id="table-scroll" class="table-scroll"  [style.height]="tableHeight + 'px'">
+  <div id="table-scroll" class="table-scroll" [style.height]="tableHeight + 'px'">
     <table #mainTable id="main-table" class="table table-resizable">
       <thead>
         <tr>
-          <th scope="col" *ngIf="showCheckBox" style="width: 15px;">
+          <th scope="col" *ngIf="showCheckBox" style="width: 15px;" [ngStyle]="{'color': headerColor,'background': headerBg}">
             <input type="checkbox" (change)="checkAll()" [(ngModel)]="selectAll">
           </th>
           <ng-container *ngFor="let header of gtColumnList">
-            <th scope="col">
+            <th scope="col" [ngStyle]="{'color': headerColor,'background': headerBg}">
               {{header.header}} <span class="resize-handle"></span>
             </th>
           </ng-container>

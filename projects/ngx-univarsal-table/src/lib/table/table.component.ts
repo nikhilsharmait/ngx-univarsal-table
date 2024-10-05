@@ -15,6 +15,9 @@ export class TableComponent implements OnInit {
   @Input() itemPerPage: number = 10;
   @Input() tableHeight: number = 150;
   @Input() showCheckBox: boolean = false;
+  @Input() headerColor = "#fff";
+  @Input() headerBg = "#0092F7";
+  
   @Output() onChecked = new EventEmitter<any>();
   page:number=1;
 
